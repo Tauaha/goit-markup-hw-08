@@ -1,5 +1,12 @@
+:root {
+    --main-color: #212121;
+--second-color: #757575;
+    background-color: #F5F5F5;;
+    }
+
+
 .body{
-    font-family: "roboto";
+    font-family: "roboto", sans-serif;
     background-color:  #F5F5F5;;
 }
 .header-nav {
@@ -8,7 +15,7 @@ font-weight: 500;
 font-size: 14px;
 line-height: 1.1;
 letter-spacing: 0.02em;
-color: #212121;
+color: var(--main-color);
 }
 .logo {
     font-family: 'Raleway';
@@ -38,7 +45,7 @@ color: #2196F3;
     font-size: 14px;
     line-height: 1.1;
     letter-spacing: 0.02em;
-    color: #212121;
+    color: var(--main-color);
     
 }
 .list-nav, .header-item, .header-mail:hover :focus{
@@ -52,7 +59,7 @@ font-weight: 500;
 font-size: 14px;
 line-height: 1.1;
 letter-spacing: 0.02em;
-color: #757575; 
+color: var(--second-color); 
 }
 .link, .list {
     list-style: none;
@@ -95,7 +102,7 @@ font-size: 14px;
 line-height: 1.1;
 letter-spacing: 0.03em;
 text-transform: uppercase;
-color: #212121;
+color: var(--main-color);
 }
 .about-text{
 font-style: normal;
@@ -103,7 +110,7 @@ font-weight: 400;
 font-size: 14px;
 line-height: 1.7;
 letter-spacing: 0.03em;
-color: #757575;
+color: var(--second-color);
 }
 /*Our works*/
 .work-title{
@@ -113,7 +120,7 @@ font-size: 36px;
 line-height: 1.1;
 text-align: center;
 letter-spacing: 0.03em;
-color: #212121;
+color: var(--main-color);
 }
 /*Our team*/
 .team-title{
@@ -123,7 +130,7 @@ font-size: 36px;
 line-height: 1.1;
 text-align: center;
 letter-spacing: 0.03em;
-color: #212121;
+color: var(--main-color);
 }
 .team-text{
 font-style: normal;
@@ -132,7 +139,7 @@ font-size: 16px;
 line-height: 1.1;
 text-align: center;
 letter-spacing: 0.03em;
-color: #212121;
+color: var(--main-color);
 }
 .team-desc{
 font-style: normal;
@@ -141,7 +148,7 @@ font-size: 16px;
 line-height: 19px;
 text-align: center;
 letter-spacing: 0.03em;
-color: #757575;
+color: var(--second-color);
 }
 /*portfolio filter*/
 .filter-button{
@@ -150,7 +157,7 @@ font-size: 16px;
 line-height: 1.6;
 text-align: center;
 letter-spacing: 0.03em;
-color: #212121;
+color: var(--main-color);
 }
 .filter-button:hover{
 font-weight: 500;
@@ -168,7 +175,7 @@ background-color: #2196F3;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    color: #212121;
+    color: var(--main-color);
 }
 .text-link{
 font-style: normal;
@@ -176,7 +183,7 @@ font-weight: 400;
 font-size: 16px;
 line-height: 1.8;
 letter-spacing: 0.03em;
-color: #757575;
+color: var(--second-color);
 }
 
 
