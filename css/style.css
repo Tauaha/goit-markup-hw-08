@@ -1,13 +1,13 @@
 :root {
     --main-color: #212121;
 --second-color: #757575;
-    background-color: #F5F5F5;;
+background: #FFFFFF;
     }
 
 
 .body{
     font-family: "roboto", sans-serif;
-    background-color:  #F5F5F5;;
+    background: #FFFFFF;
 }
 .container {
     width: 1200px;
@@ -113,13 +113,13 @@ a{
 /* hero*/
 .hero {
     background-color: #2F303A;
-    height: 600px;
-    width: 1600px;
-    margin: auto;
+    text-align: center;
 }
 .hero-text{
     background-color: #2F303A;
-    padding: 200px 452px 30px 452px;
+    padding-top: 200px;
+    margin: auto;
+    width: 696px;
     align-items: center;
 font-weight: 900;
 font-size: 44px;
@@ -130,9 +130,14 @@ text-transform: uppercase;
 color: #FFFFFF;
 
 }
+.centered {
+    padding-bottom: 200px;
+    display: flex;
+    justify-content: center;
+}
 .button{
-    margin: 0 692px 200px 692px;
     padding: 10px 30px;
+    margin-top: 30px;
 font-size: 16px;
 line-height: 30px;
 min-width: 216px;
@@ -196,6 +201,7 @@ color: var(--main-color);
 }
 .list-work {
     display: flex;
+    padding-bottom: 94px;
 }
 .image-work {
     margin-right: 30px;
@@ -204,11 +210,13 @@ color: var(--main-color);
 /*Our team*/
 .team-list {
     display: flex; 
+    padding-bottom: 94px;
 }
 .team-list li:not(:last-child) {
     margin-right: 30px;
 }
 .team-title{
+    padding-top: 94px;
     margin-bottom: 50px;
 font-style: normal;
 font-weight: 700;
@@ -275,6 +283,7 @@ background-color: #2196F3;
 .element-list {
     display: flex;
     flex-wrap: wrap;
+    padding-bottom: 94px;
 }
 .element {
     width: 370px;
@@ -286,6 +295,7 @@ background-color: #2196F3;
     margin-right: 0;
 }
 .title-link{
+    
     margin-top: 20px;
     margin-bottom: 4px;
     font-style: normal;
@@ -296,15 +306,17 @@ background-color: #2196F3;
     color: var(--main-color);
 }
 .text-link{
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 1.8;
-letter-spacing: 0.03em;
-color: var(--second-color);
+    padding-bottom: 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 0.03em;
+    color: var(--second-color);
 }
 
 .text-bord {
+    padding-left: 24px;
     border: 1px solid #EEEEEE;
 }
 
