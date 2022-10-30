@@ -5,61 +5,78 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
-    <link rel="stylesheet" href="./css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="./css/style.css">
   </head>
   <body class="body">
     <header>
-      <nav class="header-nav">
-        <a class="logo" href="./" lang="en"><span class="logo-web">Web</span>Studio</a>
-        <ul class="list-nav list">
-          <li class="link"><a class="list-active-link nav-item" href="#">Студія</a></li>
-          <li class="link"><a class="list-active-link nav-item" href="./portfolio.html">Портфоліо</a></li>
-          <li class="link"><a class="list-active-link nav-item" href="#">Контакти</a></li>
+      <div class="container nav">
+        <nav class="header-nav">
+          
+          <a class="logo" href="./" lang="en"><span class="logo-web">Web</span>Studio</a>
+          <ul class="list-nav list">
+            <li class="link"><a class="list-active-link nav-item" href="#">Студія</a></li>
+            <li class="link"><a class="list-active-link nav-item" href="./portfolio.html">Портфоліо</a></li>
+            <li class="link"><a class="list-active-link nav-item" href="#">Контакти</a></li>
+          </ul>
+        </nav>
+        <ul class="contact-nav list">
+          <li class="header-item link"><a class="header-call list-active-link " href="mailto:info@devstudio.com">info@devstudio.com </a></li>
+          <li class="header-item link"><a class="header-call list-active-link " href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
-      </nav>
-      <ul class="header-list list">
-        <li class="header-item link"><a class="header-mail list-active-link " href="mailto:info@devstudio.com">info@devstudio.com </a></li>
-        <li class="header-item link"><a class="header-tel list-active-link " href="tel:+380961111111">+38 096 111 11 11</a></li>
-      </ul>
-    </header>
-    <main>
-      <h1 hidden>Контент</h1>
+      </div>
+      </header>
       <!--filter-->
-      <ul class="list">
-       <li><button class="filter-button" type="button">Усі</button></li>
-       <li><button class="filter-button" type="button">Веб-сайти</button></li>
-       <li><button class="filter-button" type="button">Додатки</button></li>
-       <li><button class="filter-button" type="button">Дизайн</button></li>
-       <li><button class="filter-button" type="button">Маркетинг</button></li>
+      
+      <section>
+        <div class="container"><h1 hidden>Контент</h1>
+        <ul class="list list-filter">
+         <li class="filter"><button class="filter-button" type="button">Усі</button></li>
+         <li class="filter"><button class="filter-button" type="button">Веб-сайти</button></li>
+         <li class="filter"><button class="filter-button" type="button">Додатки</button></li>
+         <li class="filter"><button class="filter-button" type="button">Дизайн</button></li>
+         <li class="filter"><button class="filter-button" type="button">Маркетинг</button></li>
+        </ul>
+      </div>
+      </section>
+      
+        <!--content-->
+        
+        <section class="content">
+          <div class="container">
+        <ul class="list element-list">
+        <li class="element"> <a href="#"> <img src="./images/Web.jpg" alt="Технокряк" width="370"><div class="text-bord"> <h2 class="title-link">Технокряк</h2> <p class="text-link">Веб-сайт</p></div></a></li>
+        <li class="element"> <a href="#"> <img src="./images/new-Orlean.jpg" alt="New Orlean vs Golden Star" width="370"><div class="text-bord"> <h2 class="title-link">Постер New Orlean vs Golden Star</h2> <p class="text-link">Дизайн</p></div></a></li>
+        <li class="element"> <a href="#"> <img src="./images/Seafood.jpg" alt="Seafood" width="370"><div class="text-bord"> <h2 class="title-link">Ресторан Seafood</h2> <p class="text-link">Додаток</p></div></a></li>
+        <li class="element"> <a href="#"> <img src="./images/Prime.jpg" alt="Prime" width="370"> <div class="text-bord"><h2 class="title-link">Проєкт Prime</h2> <p class="text-link">Маркетинг</p></div></a></li>
+        <li class="element"> <a href="#"> <img src="./images/Boxes.jpg" alt="Boxes" width="370"><div class="text-bord"><h2 class="title-link">Проєкт Boxes</h2> <p class="text-link">Додаток</p></div></a></li>
+        <li class="element"> <a href="#"> <img src="./images/Inspiration.jpg" alt="Inspiration has no Borders" width="370"><div class="text-bord"> <h2 class="title-link">Inspiration has no Borders</h2> <p class="text-link">Веб-сайт</p></div></a></li>
+        <li class="element"> <a href="#"> <img src="./images/Limited-Edition.jpg" alt="Limited Edition" width="370"><div class="text-bord"> <h2 class="title-link">Видання Limited Edition</h2> <p class="text-link">Дизайн</p></div></a></li>
+        <li class="element"> <a href="#"> <img src="./images/LAB.jpg" alt="LAB" width="370"><div class="text-bord"> <h2 class="title-link">Проєкт LAB</h2> <p class="text-link">Маркетинг</p></div></a></li>
+        <li class="element"> <a href="#"> <img src="./images/Growing-Business.jpg" alt="Growing Business" width="370"><div class="text-bord"> <h2 class="title-link">Growing Business </h2> <p class="text-link">Додаток</p></div></a></li>
       </ul>
-      <!--content-->
-      <ul class="list">
-      <li> <a href="#"> <img src="./images/Web.jpg" alt="Технокряк" width="370"> <h2 class="title-link">Технокряк</h2> <p class="text-link">Веб-сайт</p></a></li>
-      <li> <a href="#"> <img src="./images/new-Orlean.jpg" alt="New Orlean vs Golden Star" width="370"> <h2 class="title-link">Постер New Orlean vs Golden Star</h2> <p class="text-link">Дизайн</p></a></li>
-      <li> <a href="#"> <img src="./images/Seafood.jpg" alt="Seafood" width="370"> <h2 class="title-link">Ресторан Seafood</h2> <p class="text-link">Додаток</p></a></li>
-      <li> <a href="#"> <img src="./images/Prime.jpg" alt="Prime" width="370"> <h2 class="title-link">Проєкт Prime</h2> <p class="text-link">Маркетинг</p></a></li>
-      <li> <a href="#"> <img src="./images/Boxes.jpg" alt="Boxes" width="370"> <h2 class="title-link">Проєкт Boxes</h2> <p class="text-link">Додаток</p></a></li>
-      <li> <a href="#"> <img src="./images/Inspiration.jpg" alt="Inspiration has no Borders" width="370"> <h2 class="title-link">Inspiration has no Borders</h2> <p class="text-link">Веб-сайт</p></a></li>
-      <li> <a href="#"> <img src="./images/Limited-Edition.jpg" alt="Limited Edition" width="370"> <h2 class="title-link">Видання Limited Edition</h2> <p class="text-link">Дизайн</p></a></li>
-      <li> <a href="#"> <img src="./images/LAB.jpg" alt="LAB" width="370"> <h2 class="title-link">Проєкт LAB</h2> <p class="text-link">Маркетинг</p></a></li>
-      <li> <a href="#"> <img src="./images/Growing-Business.jpg" alt="Growing Business" width="370"> <h2 class="title-link">Growing Business </h2> <p class="text-link">Додаток</p></a></li>
-    </ul>
+      </div>
+    </section>
+  </div>
     </main>
+
     <!--footer-->
     <footer class="footer">
+      <div class="container-footer">
       <a class="logo-footer" href="./" lang="en"><span class="logo-web">Web</span>Studio</a>
       <address>
-        <ul class="list">
+        <ul class="list footer-list">
           <li>
             <a class="footer-address" href="https://goo.gl/maps/eCLikpTtXbKMdQs18"
               >м. Київ, пр-т Лесі Українки, 26</a
             >
           </li>
-          <li><a class="footer-mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          <li><a class="footer-tel" href="tel:+380961111111">+38 096 111 11 11</a></li>
+          <li><a class="footer-contact" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+          <li><a class="footer-contact" href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
       </address>
+    </div>
     </footer>
   </body>
 </html>
