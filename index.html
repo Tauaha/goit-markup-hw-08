@@ -16,9 +16,9 @@
       <nav class="header-nav">
         
         <a class="logo" href="./" lang="en"><span class="logo-web">Web</span>Studio</a>
-        <ul class="list-nav list">
-          <li class="link"><a class="list-active-link nav-item" href="#">Студія</a></li>
-          <li class="link"><a class="list-active-link nav-item" href="./portfolio.html">Портфоліо</a></li>
+        <ul class="list-nav list ">
+          <li class="link"><a class="list-active-link nav-item studio" href="#">Студія</a></li>
+          <li class="link"><a class="list-active-link nav-item " href="./portfolio.html">Портфоліо</a></li>
           <li class="link"><a class="list-active-link nav-item" href="#">Контакти</a></li>
         </ul>
       </nav>
@@ -33,7 +33,7 @@
       <section class="hero">
         <div class="container">
         <h1 class="hero-text">Ефективні рішення для вашого бізнесу</h1>
-        <button class="button " type="button">Замовити послугу</button>
+        <button class="button " type="button" data-modal-open>Замовити послугу</button>
       </div>
       </section>
 
@@ -93,9 +93,12 @@
       <div class="container">
         <h2 class="work-title">Чим ми займаємося</h2>
         <ul class="list list-work">
-          <li><img class="image-work" src="./images/work1.jpg" alt="our work" width="370" /></li>
-          <li><img class="image-work" src="./images/wrk2.jpg" alt="our work" width="370" /></li>
-          <li><img class="image-work" src="./images/work3.jpg" alt="our work" width="370" /></li>
+          <li class="work-item"><div class="work-thumb"><img class="image-work" src="./images/work1.jpg" alt="our work" width="370" />
+            <h3 class="work-text">Десктопні додатки</h3></div></li>
+          <li class="work-item"><div class="work-thumb"><img class="image-work" src="./images/wrk2.jpg" alt="our work" width="370" />
+          <h3 class="work-text">Мобільні додатки</h3></div></li>
+          <li class="work-item"><div class="work-thumb"><img class="image-work" src="./images/work3.jpg" alt="our work" width="370" />
+          <h3 class="work-text">Дизайнерські рішення</h3></div></li>
         </ul>
       </div>
       </section>
@@ -341,5 +344,13 @@
       </div>
       
     </footer>
+    <div class="modal-backdrop is-hidden" data-modal>
+      <div class="modal">
+        <div class="close-sign" data-modal-close><svg id="icon-close" width="14" height="14">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg></div>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
