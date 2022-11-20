@@ -22,8 +22,14 @@
           </ul>
         </nav>
         <ul class="contact-nav list">
-          <li class="header-item link"><a class="header-call list-active-link " href="mailto:info@devstudio.com">info@devstudio.com </a></li>
-          <li class="header-item link"><a class="header-call list-active-link header-tell" href="tel:+380961111111">+38 096 111 11 11</a></li>
+          <li class="header-item link"><a class="header-call list-active-link " href="mailto:info@devstudio.com"><svg class="icon-smartphone list-active-link" width="16" height="12">
+            <use href="./images/icons.svg#icon-envelope"></use>
+          </svg>
+            info@devstudio.com </a></li>
+          <li class="header-item link"><a class="header-call list-active-link header-tell" href="tel:+380961111111"> <svg class="icon-smartphone list-active-link" width="10" height="16">
+            <use href="./images/icons.svg#icon-smartphone"></use>
+          </svg>
+            +38 096 111 11 11</a></li>
         </ul>
       </div>
       </header>
@@ -113,8 +119,24 @@
             </li>       
           </ul>
         </div>
+        <div class="join-form mailing">
+          <h3 class="join-title">Підпишіться на розсилку</h3>
+          <form action="">
+            <input class="user-mail" type="email" name="user-name" placeholder="E-mail">
+            <button class="button" type="submit" >
+              Підписатися<svg class="icon-send" width="24" height="24"><use href="./images/icons.svg#icon-send-form"></use></svg></button>
+          </form>
+        </div>
       </div>
-      
+     
     </footer>
+    <div class="modal-backdrop is-hidden" data-modal>
+      <div class="modal">
+        <div class="close-sign" data-modal-close><svg id="icon-close" width="14" height="14">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg></div>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
