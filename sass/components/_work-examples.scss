@@ -1,0 +1,39 @@
+.work__title{
+    margin-bottom: 50px;
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 1.1;
+text-align: center;
+letter-spacing: 0.03em;
+color: $main-color;
+}
+.work-list {
+    display: flex;   
+}
+
+.work-list__item{
+    margin-right: 30px;
+    margin-bottom: 94px;
+}
+
+.work__thumb{
+    position: relative;
+}
+.work-list {
+    .work__text {
+        position: absolute;
+        top: 224px;
+        background: rgba(47, 48, 58, 0.8);
+        width: 370px;
+        height: 70px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    padding-top: 27px;
+    color: #FFFFFF;
+}
+}

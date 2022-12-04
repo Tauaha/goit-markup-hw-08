@@ -1,0 +1,44 @@
+.about .container {
+    
+    display: flex;
+    align-items: center;
+    padding:  94px 215px;
+    justify-content: center;
+  }
+  .icon-list {
+      width: 270px;
+      height: 120px;
+      background: #F5F4FA;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 30px;
+  }
+  .about__list{
+      display: inline-flex;
+      padding-left: 15px;
+      list-style: none;
+  }
+  .about__item {
+      min-width: 270px;
+      margin-right: 30px;
+  }
+  .about__title{
+      margin-bottom: 10px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $main-color;
+  }
+  .about__text{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: $second-color;
+  }

@@ -1,0 +1,36 @@
+.filter-list {
+    display: flex;
+    justify-content: center;
+    padding-top: 94px;
+    padding-bottom: 50px;
+}
+.filter-list__button{
+    min-width: 73px;
+    padding: 6px 25px;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.6;
+text-align: center;
+align-items: center;
+border-radius: 4px;
+border: transparent;
+letter-spacing: 0.03em;
+color: $main-color;
+transition-property: background-color, $main-color;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+&:hover{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    background-color: #2196F3;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    
+    }
+}
+.filter-list__item:not(:last-child) {
+    margin-right: 8px;
+}
