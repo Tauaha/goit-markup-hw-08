@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width-device-width initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
     
@@ -11,18 +12,46 @@
     <link rel="stylesheet" href="./css/main.min.css">
   </head>
   <body class="body">
-    <header>
+    <header class="page-header">
       <div class="container nav">
       <nav class="header-nav">
         
         <a class="logo" href="./" lang="en"><span class="logo-web">Web</span>Studio</a>
-        <ul class="nav-list list ">
+       <ul class="nav-list list menu ">
           <li class="nav-list__item"><a class="list-active-link nav-list__link studio" href="./index.html">Студія</a></li>
           <li class="nav-list__item"><a class="list-active-link nav-list__link  " href="./portfolio.html">Портфоліо</a></li>
           <li class="nav-list__item"><a class="list-active-link nav-list__link " href="#">Контакти</a></li>
         </ul>
+        <div class="container-menu">
+          <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="24" height="16" aria-label="мобільне меню">
+            <use class="icon-close_nav" href="./images/icons.svg#icon-close-nav"></use>
+            <use class="icon-menu_nav" href="./images/icons.svg#icon-menu-nav"></use>
+          </svg>
+        </button>
+        <!--<ul class="nav-list list menu">
+          <li class="nav-list__item "><a class="list-active-link nav-list__link studio" href="./index.html">Студія</a></li>
+          <li class="nav-list__item "><a class="list-active-link nav-list__link  " href="./portfolio.html">Портфоліо</a></li>
+          <li class="nav-list__item "><a class="list-active-link nav-list__link " href="#">Контакти</a></li>
+        </ul>-->
+        <ul class="contact-nav list">
+          <li class="contact-nav__list nav-list__item"><a class="contact-nav__link list-active-link " href="mailto:info@devstudio.com"><svg class="icon-smartphone list-active-link" width="16" height="12">
+            <use href="./images/icons.svg#icon-envelope"></use>
+          </svg>
+            info@devstudio.com </a></li>
+          <li class="contact-nav__list nav-list__item"><a class="contact-nav__link list-active-link header-tell" href="tel:+380961111111"> <svg class="icon-smartphone list-active-link" width="10" height="16">
+            <use href="./images/icons.svg#icon-smartphone"></use>
+          </svg>
+            +38 096 111 11 11</a></li>
+        </ul></div>
+    </div>
+        
       </nav>
-      <ul class="contact-nav list">
+    <!-- <ul class="contact-nav list">
         <li class="contact-nav__list nav-list__item"><a class="contact-nav__link list-active-link " href="mailto:info@devstudio.com"><svg class="icon-smartphone list-active-link" width="16" height="12">
           <use href="./images/icons.svg#icon-envelope"></use>
         </svg>
@@ -31,7 +60,7 @@
           <use href="./images/icons.svg#icon-smartphone"></use>
         </svg>
           +38 096 111 11 11</a></li>
-      </ul>
+      </ul>-->
     </div>
     </header>
     <main>
@@ -44,8 +73,10 @@
       </section>
 
       <!--about-->
-        <section class="about">
-          <div class="container">
+        
+         
+            <section class="about">
+              <div class="container">
         <ul class=" about__list">
           <li class="about__item">
             <div class="icon-list"> 
@@ -92,10 +123,11 @@
           </li>
         </ul>
       </div>
-      </section>
+    </section>
+      
       
       <!--our work-->
-     <section>
+     <!--<section>
       <div class="container">
         <h2 class="work__title">Чим ми займаємося</h2>
         <ul class="list work-list">
@@ -107,7 +139,7 @@
           <h3 class="work__text">Дизайнерські рішення</h3></div></li>
         </ul>
       </div>
-      </section>
+      </section>-->
 
       <!--Our team-->
       <section class="work-team">
@@ -115,7 +147,12 @@
         <h2 class="work-team__title">Наша команда</h2>
         <ul class="list team-list">
           <li class="team-list__item">
-            <img src="./images/Igor.jpg" alt="product designer" width="270" />
+            <img 
+            srcset="./images/Igor-270.jpg 270w, ./images/Igor-354.jpg 354w, 
+            ./images/Igor-450.jpg 450w, ./images/Igor-540.jpg 540w,
+             ./images/Igor-708.jpg 708w, ./images/Igor-900.jpg 900w"
+             sizes="(min-width:1200px) 270px,(min-width:768px) 354px, (min-width:480px) 450px, 100vw"
+            src="./images/Igor-450.jpg" alt="product designer" width="450" />
             <h3 class="work-team__text">Ігор Дем'яненко</h3>
             <p class="work-team__desc">Product Designer</p>
             <ul class="list social-list">
@@ -150,7 +187,13 @@
             </ul>
           </li>
           <li class="team-list__item">
-            <img src="./images/Olga.jpg" alt="Frontend Developer" width="270" />
+            
+            <img
+            srcset="./images/Olga-270.jpg 270w, ./images/Olga-354.jpg 354w, 
+            ./images/Olga-450.jpg 450w, ./images/Olga-540.jpg 540w,
+             ./images/Olga-708.jpg 708w, ./images/Olga-900.jpg 900w"
+             sizes="(min-width:1200px) 270px,(min-width:768px) 354px, (min-width:480px) 450px, 100vw"
+             src="./images/Olga-450.jpg" alt="Frontend Developer" width="450" />
             <h3 class="work-team__text">Ольга Рєпіна</h3>
             <p class="work-team__desc">Frontend Developer</p>
             <ul class="list social-list">
@@ -186,9 +229,13 @@
           </li>
           <li class="team-list__item">
             <img
-              src="./images/Mukola.jpg"
+            srcset="./images/Mukola-270.jpg 270w, ./images/Mukola-354.jpg 354w, 
+            ./images/Mukola-450.jpg 450w, ./images/Mukola-540.jpg 540w,
+             ./images/Mukola-708.jpg 708w, ./images/Mukola-900.jpg 900w"
+             sizes="(min-width:1200px) 270px,(min-width:768px) 354px, (min-width:480px) 450px, 100vw"
+              src="./images/Mukola-450.jpg"
               alt="marketing manager"
-              width="270"
+              width="450"
             />
             <h3 class="work-team__text">Микола Тарасов</h3>
             <p class="work-team__desc">Marketing</p>
@@ -224,7 +271,12 @@
             </ul>
           </li>
           <li class="team-list__item">
-            <img src="./images/Muchailo.jpg" alt="UI Designer" width="270" />
+            <img 
+            srcset="./images/Muchailo-270.jpg 270w, ./images/Muchailo-354.jpg 354w, 
+            ./images/Muchailo-450.jpg 450w, ./images/Muchailo-540.jpg 540w,
+             ./images/Muchailo-708.jpg 708w, ./images/Muchailo-900.jpg 900w"
+             sizes="(min-width:1200px) 270px,(min-width:768px) 354px, (min-width:480px) 450px, 100vw"
+            src="./images/Muchailo-450.jpg" alt="UI Designer" width="450" />
             <h3 class="work-team__text">Михайло Єрмаков</h3>
             <p class="work-team__desc">UI Designer</p>
             <ul class="list social-list">
@@ -263,7 +315,7 @@
       </section>
 
       <!--Our clients-->
-      <section class="clients">
+    <section class="clients">
         <div class="container">
 <h2 class="clients__title">Постійні клієнти</h2>
 <ul class="list clients-list">
@@ -402,6 +454,54 @@
         </form>
       </div>
     </div>
+    <!--<script src="./js/mobile-menu.js"></script>-->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+
+      <ul class="nav-list list mobile-menu">
+        <li class="nav-list__item "><a class="list-active-link nav-list__link studio " href="./index.html">Студія</a></li>
+        <li class="nav-list__item "><a class="list-active-link nav-list__link  " href="./portfolio.html">Портфоліо</a></li>
+        <li class="nav-list__item "><a class="list-active-link nav-list__link " href="#">Контакти</a></li>
+      </ul>
+      <ul class="contact-nav list">
+        <li class="contact-nav__list nav-list__item"><a class="contact-nav__link list-active-link " href="mailto:info@devstudio.com"><svg class="icon-smartphone list-active-link" width="16" height="12">
+          <use href="./images/icons.svg#icon-envelope"></use>
+        </svg>
+          info@devstudio.com </a></li>
+        <li class="contact-nav__list nav-list__item"><a class="contact-nav__link list-active-link header-tell" href="tel:+380961111111"> <svg class="icon-smartphone list-active-link" width="10" height="16">
+          <use href="./images/icons.svg#icon-smartphone"></use>
+        </svg>
+          +38 096 111 11 11</a></li>
+      </ul>
+      <ul class="mobile-list">
+        <li class="mobile-list__item"><a href="" class="mobile-list__link">Instagram</a></li>
+        <li class="mobile-list__item"><a href="" class="mobile-list__link">Twitter</a></li>
+      <li class="mobile-list__item"><a href="" class="mobile-list__link">Facebook</a></li>
+      <li class="mobile-list__item"><a href="" class="mobile-list__link">LinkedIn</a></li>
+      </ul>
+    </div>
+
+    <script
+    defer
+    src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"
+  ></script>
+  <script defer src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

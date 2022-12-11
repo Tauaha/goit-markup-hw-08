@@ -1,3 +1,6 @@
+.page-header{
+    position: relative;
+}
 .nav {
     display: flex;
 }
@@ -5,7 +8,7 @@
     border: 1px solid #ECECEC;
 }
 .header-nav {
-    display: flex;
+   display: flex;
 font-style: normal;
 font-weight: 500;
 font-size: 14px;
@@ -14,7 +17,8 @@ letter-spacing: 0.02em;
 color: $main-color;
 }
 .logo {
-    margin-right: 94px;
+    margin-right: 276px;
+    //margin-right: 94px;
     font-family: 'Raleway';
 font-style: normal;
 font-weight: 700;
@@ -34,20 +38,24 @@ color: #2196F3;
 }
 .logo, .logo-web {
     margin-top: 24px;
-    margin-bottom: 25px;
-    width: 145px;
+    margin-bottom: 16px;
+    width: 134px;
+    //margin-bottom: 25px;
+
+    //width: 145px;
     text-decoration: none;
 }
 .nav-list {
-    display: flex;
+
+        display: flex;
     
 }
 .nav-list .nav-list__link {
-    
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 40px;
+    //font-size: 14px;
     line-height: 1.1;
     letter-spacing: 0.02em;
     color: $main-color;
@@ -61,15 +69,42 @@ color: #2196F3;
         margin-right: 50px;
 }
 }
+.menu-toggle{
+    display: inline-flex;
+    //margin: 0;
+    margin-top: 10px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+}
+.menu-toggle .icon-close_nav{
+    display: none;
+}
+.menu-toggle.is-open .icon-close_nav {
+    display: block;
+}
+.menu-toggle.is-open .icon-menu_nav{
+    display: none;
+}
 .contact-nav   {
+ 
     display: flex;
+
+
 }
 .contact-nav > .nav-list__item {
-    margin-top: 32px;
-    margin-bottom: 32px;
-    &:not(:last-child) {
-        margin-left: 315px;
-        margin-right: 30px;}
+    @media (max-width: 767px) {
+          display: none;
+        }
+    @media screen and(min-width:1200px) {
+        margin-top: 32px;
+        margin-bottom: 32px;
+        &:not(:last-child) {
+            margin-left: 315px;
+            margin-right: 30px;}
+    }
+ 
+    
 }
 
 .nav-list, .contact-nav__list, .contact-nav__link :focus{
