@@ -1,3 +1,8 @@
+.work-examples{
+    @media screen and(max-width:1199px) {
+        display: none;
+    }
+}
 .work__title{
     margin-bottom: 50px;
 font-style: normal;
@@ -23,7 +28,7 @@ color: $main-color;
 .work-list {
     .work__text {
         position: absolute;
-        top: 224px;
+        top: 217px;
         background: rgba(47, 48, 58, 0.8);
         width: 370px;
         height: 70px;
@@ -35,5 +40,6 @@ color: $main-color;
     text-transform: uppercase;
     padding-top: 27px;
     color: #FFFFFF;
+    width: 100%;
 }
 }

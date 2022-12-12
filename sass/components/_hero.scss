@@ -4,15 +4,38 @@
     height: 400px;
     margin-left: auto;
     margin-right: auto;
-    background-image:linear-gradient(0deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-     url(../images/hero.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/Hero/Header-img-sm.jpg);
      background-position: center;
      background-size: cover;
      background-repeat: no-repeat;
     text-align: center;  
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+          url(../images/Hero/Header-img@2x-sm.jpg);
+      }
+      @media screen and (min-width: 481px) {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+          url(../images/Hero/Header-img-md.jpg);
+        // retina tablet screen
+        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+          background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url(../images/Hero/Header-img@2x-md.jpg);
+        }
+      }
     @media screen and (min-width: 768px) {
         max-width: 768px; 
     }
+    // Desktop screen
+  @media screen and (min-width: 769px) {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/Hero/Header-lg.jpg);
+    // retina desktop screen
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/Hero/Header@2x-lg.jpg);
+    }
+  }
     @media screen and (min-width: 1200px) {
         max-width: 1600px;
     height: 600px;

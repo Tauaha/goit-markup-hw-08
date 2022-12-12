@@ -33,11 +33,6 @@
             <use class="icon-menu_nav" href="./images/icons.svg#icon-menu-nav"></use>
           </svg>
         </button>
-        <!--<ul class="nav-list list menu">
-          <li class="nav-list__item "><a class="list-active-link nav-list__link studio" href="./index.html">Студія</a></li>
-          <li class="nav-list__item "><a class="list-active-link nav-list__link  " href="./portfolio.html">Портфоліо</a></li>
-          <li class="nav-list__item "><a class="list-active-link nav-list__link " href="#">Контакти</a></li>
-        </ul>-->
         <ul class="contact-nav list">
           <li class="contact-nav__list nav-list__item"><a class="contact-nav__link list-active-link " href="mailto:info@devstudio.com"><svg class="icon-smartphone list-active-link" width="16" height="12">
             <use href="./images/icons.svg#icon-envelope"></use>
@@ -49,18 +44,7 @@
             +38 096 111 11 11</a></li>
         </ul></div>
     </div>
-        
       </nav>
-    <!-- <ul class="contact-nav list">
-        <li class="contact-nav__list nav-list__item"><a class="contact-nav__link list-active-link " href="mailto:info@devstudio.com"><svg class="icon-smartphone list-active-link" width="16" height="12">
-          <use href="./images/icons.svg#icon-envelope"></use>
-        </svg>
-          info@devstudio.com </a></li>
-        <li class="contact-nav__list nav-list__item"><a class="contact-nav__link list-active-link header-tell" href="tel:+380961111111"> <svg class="icon-smartphone list-active-link" width="10" height="16">
-          <use href="./images/icons.svg#icon-smartphone"></use>
-        </svg>
-          +38 096 111 11 11</a></li>
-      </ul>-->
     </div>
     </header>
     <main>
@@ -73,8 +57,6 @@
       </section>
 
       <!--about-->
-        
-         
             <section class="about">
               <div class="container">
         <ul class=" about__list">
@@ -124,22 +106,30 @@
         </ul>
       </div>
     </section>
-      
-      
       <!--our work-->
-     <!--<section>
+     <section class="work-examples">
       <div class="container">
         <h2 class="work__title">Чим ми займаємося</h2>
         <ul class="list work-list">
-          <li class="work-list__item"><div class="work__thumb"><img class="work__image" src="./images/work1.jpg" alt="our work" width="370" />
+          <li class="work-list__item"><div class="work__thumb"><img class="work__image" 
+            srcset="./images/work1-370.jpg 1x, , 
+             ./images/work1-740.jpg 2x"
+             
+            src="./images/work1-370.jpg" alt="our work" width="370 loading=lazy" />
             <h3 class="work__text">Десктопні додатки</h3></div></li>
-          <li class="work-list__item"><div class="work__thumb"><img class="work__image" src="./images/wrk2.jpg" alt="our work" width="370" />
+          <li class="work-list__item"><div class="work__thumb"><img class="work__image"  srcset="./images/work2-370.jpg 1x, , 
+            ./images/work2-740.jpg 2x"
+            
+           src="./images/work2-370.jpg" alt="our work" width="370 loading=lazy" />
           <h3 class="work__text">Мобільні додатки</h3></div></li>
-          <li class="work-list__item"><div class="work__thumb"><img class="work__image" src="./images/work3.jpg" alt="our work" width="370" />
+          <li class="work-list__item"><div class="work__thumb"><img class="work__image"  srcset="./images/work3-370.jpg 1x, , 
+            ./images/work3-740.jpg 2x"
+            
+           src="./images/work3-370.jpg" alt="our work" width="370 loading=lazy" />
           <h3 class="work__text">Дизайнерські рішення</h3></div></li>
         </ul>
       </div>
-      </section>-->
+      </section>
 
       <!--Our team-->
       <section class="work-team">
@@ -473,11 +463,11 @@
       </button>
 
       <ul class="nav-list list mobile-menu">
-        <li class="nav-list__item "><a class="list-active-link nav-list__link studio " href="./index.html">Студія</a></li>
+        <li class="nav-list__item "><a class="list-active-link nav-list__link  " href="./index.html">Студія</a></li>
         <li class="nav-list__item "><a class="list-active-link nav-list__link  " href="./portfolio.html">Портфоліо</a></li>
         <li class="nav-list__item "><a class="list-active-link nav-list__link " href="#">Контакти</a></li>
       </ul>
-      <ul class="contact-nav list">
+      <ul class="contact-nav list mobile-menu">
         <li class="contact-nav__list nav-list__item"><a class="contact-nav__link list-active-link " href="mailto:info@devstudio.com"><svg class="icon-smartphone list-active-link" width="16" height="12">
           <use href="./images/icons.svg#icon-envelope"></use>
         </svg>
@@ -487,11 +477,11 @@
         </svg>
           +38 096 111 11 11</a></li>
       </ul>
-      <ul class="mobile-list">
+      <ul class="mobile-list list">
         <li class="mobile-list__item"><a href="" class="mobile-list__link">Instagram</a></li>
-        <li class="mobile-list__item"><a href="" class="mobile-list__link">Twitter</a></li>
-      <li class="mobile-list__item"><a href="" class="mobile-list__link">Facebook</a></li>
-      <li class="mobile-list__item"><a href="" class="mobile-list__link">LinkedIn</a></li>
+        <li class="mobile-list__item"><a href="" class="mobile-list__link border">Twitter</a></li>
+      <li class="mobile-list__item"><a href="" class="mobile-list__link border">Facebook</a></li>
+      <li class="mobile-list__item"><a href="" class="mobile-list__link border">LinkedIn</a></li>
       </ul>
     </div>
 

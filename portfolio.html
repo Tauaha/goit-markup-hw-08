@@ -10,17 +10,27 @@
     <link rel="stylesheet" href="./css/main.min.css">
   </head>
   <body class="body">
-    <header class="header">
+    <header class="page-header">
       <div class="container nav">
-        <nav class="header-nav">
-          
-          <a class="logo" href="./" lang="en"><span class="logo-web">Web</span>Studio</a>
-          <ul class="nav-list list">
-            <li class="nav-list__item"><a class="list-active-link nav-list__link" href="./index.html">Студія</a></li>
-            <li class="nav-list__item"><a class="list-active-link nav-list__link portfolio" href="./portfolio.html">Портфоліо</a></li>
-            <li class="nav-list__item"><a class="list-active-link nav-list__link" href="#">Контакти</a></li>
-          </ul>
-        </nav>
+      <nav class="header-nav">
+        
+        <a class="logo" href="./" lang="en"><span class="logo-web">Web</span>Studio</a>
+       <ul class="nav-list list menu ">
+          <li class="nav-list__item"><a class="list-active-link nav-list__link " href="./index.html">Студія</a></li>
+          <li class="nav-list__item"><a class="list-active-link nav-list__link  portfolio" href="./portfolio.html">Портфоліо</a></li>
+          <li class="nav-list__item"><a class="list-active-link nav-list__link " href="#">Контакти</a></li>
+        </ul>
+        <div class="container-menu">
+          <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="24" height="16" aria-label="мобільне меню">
+            <use class="icon-close_nav" href="./images/icons.svg#icon-close-nav"></use>
+            <use class="icon-menu_nav" href="./images/icons.svg#icon-menu-nav"></use>
+          </svg>
+        </button>
         <ul class="contact-nav list">
           <li class="contact-nav__list nav-list__item"><a class="contact-nav__link list-active-link " href="mailto:info@devstudio.com"><svg class="icon-smartphone list-active-link" width="16" height="12">
             <use href="./images/icons.svg#icon-envelope"></use>
@@ -30,9 +40,11 @@
             <use href="./images/icons.svg#icon-smartphone"></use>
           </svg>
             +38 096 111 11 11</a></li>
-        </ul>
-      </div>
-      </header>
+        </ul></div>
+    </div>
+      </nav>
+    </div>
+    </header>
       <!--filter-->
       
       <section>
@@ -52,17 +64,89 @@
         <section class="content">
           <div class="container">
         <ul class="list element-list">
-        <li class="element-list__item"> <a href="#"><div class="desc-container"><img class="desc-container__image" src="./images/Web.jpg" alt="Технокряк" width="370"><p class="desc-container__desc">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p></div> 
-          <div class="product-meta"> <h2 class="product-meta__title">Технокряк</h2> <p class="product-meta__text">Веб-сайт</p></div></a></li>
-        <li class="element-list__item"> <a href="#"><div class="desc-container"> <img class="desc-container__image" src="./images/new-Orlean.jpg" alt="New Orlean vs Golden Star" width="370"><p class="desc-container__desc">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p></div><div class="product-meta"> <h2 class="product-meta__title">Постер New Orlean vs Golden Star</h2> <p class="product-meta__text">Дизайн</p></div></a></li>
-        <li class="element-list__item"> <a href="#"><div class="desc-container"> <img class="desc-container__image" src="./images/Seafood.jpg" alt="Seafood" width="370"><p class="desc-container__desc">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p></div> <div class="product-meta"> <h2 class="product-meta__title">Ресторан Seafood</h2> <p class="product-meta__text">Додаток</p></div></a></li>
-        <li class="element-list__item"> <a href="#"> <div class="desc-container"><img class="desc-container__image" src="./images/Prime.jpg" alt="Prime" width="370"> <p class="desc-container__desc">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p></div>
-          <div class="product-meta"><h2 class="product-meta__title">Проєкт Prime</h2> <p class="product-meta__text">Маркетинг</p></div></a></li>
-        <li class="element-list__item"> <a href="#"> <div class="desc-container"><img class="desc-container__image" src="./images/Boxes.jpg" alt="Boxes" width="370"><p class="desc-container__desc">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p></div><div class="product-meta"><h2 class="product-meta__title">Проєкт Boxes</h2> <p class="product-meta__text">Додаток</p></div></a></li>
-        <li class="element-list__item"> <a href="#"> <div class="desc-container"><img class="desc-container__image" src="./images/Inspiration.jpg" alt="Inspiration has no Borders" width="370"><p class="desc-container__desc">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p></div><div class="product-meta"> <h2 class="product-meta__title">Inspiration has no Borders</h2> <p class="product-meta__text">Веб-сайт</p></div></a></li>
-        <li class="element-list__item"> <a href="#"> <div class="desc-container"><img class="desc-container__image" src="./images/Limited-Edition.jpg" alt="Limited Edition" width="370"><p class="desc-container__desc">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p></div><div class="product-meta"> <h2 class="product-meta__title">Видання Limited Edition</h2> <p class="product-meta__text">Дизайн</p></div></a></li>
-        <li class="element-list__item"> <a href="#"><div class="desc-container"> <img class="desc-container__image" src="./images/LAB.jpg" alt="LAB" width="370"><p class="desc-container__desc">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p></div><div class="product-meta"> <h2 class="product-meta__title">Проєкт LAB</h2> <p class="product-meta__text">Маркетинг</p></div></a></li>
-        <li class="element-list__item"> <a href="#"> <div class="desc-container"><img class="desc-container__image" src="./images/Growing-Business.jpg" alt="Growing Business" width="370"><p class="desc-container__desc">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p></div><div class="product-meta"> <h2 class="product-meta__title">Growing Business </h2> <p class="product-meta__text">Додаток</p></div></a></li>
+        <li class="element-list__item"> <a href="#"><div class="desc-container">
+          <img 
+          srcset="./images/technokryak/Technokryak-354.jpg 354w, ./images/technokryak/Technokryak-370.jpg 370w, 
+          ./images/technokryak/Technokryak-450.jpg 450w, ./images/technokryak/Technokryak-708.jpg 708w,
+          ./images/technokryak/Technokryak-740.jpg 740w, ./images/technokryak/Technokryak-900.jpg 900w"
+           sizes="(min-width:1200px) 370px,(min-width:768px) 354px, (min-width:480px) 450px, 100vw"
+          class="desc-container__image" src="./images/technokryak/Technokryak-450.jpg" alt="Технокряк" width="450">
+          <p class="desc-container__desc">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p></div> 
+          <div class="product-meta"> <h2 class="product-meta__title">Технокряк</h2> 
+            <p class="product-meta__text">Веб-сайт</p></div></a></li>
+        <li class="element-list__item"> <a href="#"><div class="desc-container"> 
+          <img 
+          srcset="./images/backet/backet-354.jpg 354w, ./images/backet/backet-370.jpg 370w, 
+          ./images/backet/backet-450.jpg 450w, ./images/backet/backet-708.jpg 708w,
+          ./images/backet/backet-740.jpg 740w, ./images/backet/backet-900.jpg 900w"
+           sizes="(min-width:1200px) 370px,(min-width:768px) 354px, (min-width:480px) 450px, 100vw"
+          class="desc-container__image" src="./images/backet/backet-450.jpg" alt="New Orlean vs Golden Star" width="450">
+          <p class="desc-container__desc">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p></div>
+          <div class="product-meta"> <h2 class="product-meta__title">Постер New Orlean vs Golden Star</h2> <p class="product-meta__text">Дизайн</p></div></a></li>
+        <li class="element-list__item"> <a href="#"><div class="desc-container"> 
+          <img 
+          srcset="./images/fish/fish-354.jpg 354w, ./images/fish/fish-370.jpg 370w, 
+          ./images/fish/fish-450.jpg 450w, ./images/fish/fish-708.jpg 708w,
+          ./images/fish/fish-740.jpg 740w, ./images/fish/fish-900.jpg 900w"
+           sizes="(min-width:1200px) 370px,(min-width:768px) 354px, (min-width:480px) 450px, 100vw"
+          class="desc-container__image" src="./images/fish/fish-450.jpg" alt="Seafood" width="450">
+          <p class="desc-container__desc">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p></div> 
+          <div class="product-meta"> <h2 class="product-meta__title">Ресторан Seafood</h2> <p class="product-meta__text">Додаток</p></div></a></li>
+        <li class="element-list__item"> <a href="#"> <div class="desc-container">
+          <img 
+          srcset="./images/aux-phone/Aux-354.jpg 354w, ./images/aux-phone/Aux-370.jpg 370w, 
+          ./images/aux-phone/Aux-450.jpg 450w, ./images/aux-phone/Aux-708.jpg 708w,
+          ./images/aux-phone/Aux-740.jpg 740w, ./images/aux-phone/Aux-900.jpg 900w"
+           sizes="(min-width:1200px) 370px,(min-width:768px) 354px, (min-width:480px) 450px, 100vw"
+          class="desc-container__image" src="./images/aux-phone/Aux-450.jpg" alt="Prime" width="450">
+           <p class="desc-container__desc">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p></div>
+          <div class="product-meta"><h2 class="product-meta__title">Проєкт Prime</h2> 
+            <p class="product-meta__text">Маркетинг</p></div></a></li>
+        <li class="element-list__item"> <a href="#"> <div class="desc-container">
+          <img 
+          srcset="./images/box/box-354.jpg 354w, ./images/box/box-370.jpg 370w, 
+          ./images/box/box-450.jpg 450w, ./images/box/box-708.jpg 708w,
+          ./images/box/box-740.jpg 740w, ./images/box/box-900.jpg 900w"
+           sizes="(min-width:1200px) 370px,(min-width:768px) 354px, (min-width:480px) 450px, 100vw"
+          class="desc-container__image" src="./images/box/box-450.jpg" alt="Boxes" width="450">
+          <p class="desc-container__desc">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p></div>
+          <div class="product-meta"><h2 class="product-meta__title">Проєкт Boxes</h2> <p class="product-meta__text">Додаток</p></div></a></li>
+        <li class="element-list__item"> <a href="#"> <div class="desc-container">
+          <img 
+          srcset="./images/desktop/desktop-354.jpg 354w, ./images/desktop/desktop-370.jpg 370w, 
+          ./images/desktop/desktop-450.jpg 450w, ./images/desktop/desktop-708.jpg 708w,
+          ./images/desktop/desktop-740.jpg 740w, ./images/desktop/desktop-900.jpg 900w"
+           sizes="(min-width:1200px) 370px,(min-width:768px) 354px, (min-width:480px) 450px, 100vw"
+          class="desc-container__image" src="./images/desktop/desktop-450.jpg" alt="Inspiration has no Borders" width="450">
+          <p class="desc-container__desc">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p></div>
+          <div class="product-meta"> <h2 class="product-meta__title">Inspiration has no Borders</h2> <p class="product-meta__text">Веб-сайт</p></div></a></li>
+        <li class="element-list__item"> <a href="#"> <div class="desc-container">
+          <img 
+          srcset="./images/book/book-354.jpg 354w, ./images/book/book-370.jpg 370w, 
+          ./images/book/book-450.jpg 450w, ./images/book/book-708.jpg 708w,
+          ./images/book/book-740.jpg 740w, ./images/book/book-900.jpg 900w"
+           sizes="(min-width:1200px) 370px,(min-width:768px) 354px, (min-width:480px) 450px, 100vw"
+          class="desc-container__image" src="./images//book/book-450.jpg" alt="Limited Edition" width="450">
+          <p class="desc-container__desc">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p></div>
+          <div class="product-meta"> <h2 class="product-meta__title">Видання Limited Edition</h2> <p class="product-meta__text">Дизайн</p></div></a></li>
+        <li class="element-list__item"> <a href="#"><div class="desc-container"> 
+          <img 
+          srcset="./images/lab/lab-354.jpg 354w, ./images/lab/lab-370.jpg 370w, 
+          ./images/lab/lab-450.jpg 450w, ./images/lab/lab-708.jpg 708w,
+          ./images/lab/lab-740.jpg 740w, ./images/lab/lab-900.jpg 900w"
+           sizes="(min-width:1200px) 370px,(min-width:768px) 354px, (min-width:480px) 450px, 100vw"
+          class="desc-container__image" src="./images/lab/lab-450.jpg" alt="LAB" width="450">
+          <p class="desc-container__desc">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p></div>
+          <div class="product-meta"> <h2 class="product-meta__title">Проєкт LAB</h2> <p class="product-meta__text">Маркетинг</p></div></a></li>
+        <li class="element-list__item"> <a href="#"> <div class="desc-container">
+          <img 
+          srcset="./images/laptop/laptop-354.jpg 354w, ./images/laptop/laptop-370.jpg 370w, 
+          ./images/laptop/laptop-450.jpg 450w, ./images/laptop/laptop-708.jpg 708w,
+          ./images/laptop/laptop-740.jpg 740w, ./images/laptop/laptop-900.jpg 900w"
+           sizes="(min-width:1200px) 370px,(min-width:768px) 354px, (min-width:480px) 450px, 100vw"
+          class="desc-container__image" src="./images/laptop/laptop-450.jpg" alt="Growing Business" width="450">
+          <p class="desc-container__desc">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p></div>
+          <div class="product-meta"> <h2 class="product-meta__title">Growing Business </h2> <p class="product-meta__text">Додаток</p></div></a></li>
       </ul>
       </div>
     </section>
