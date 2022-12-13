@@ -45,6 +45,7 @@ margin-right: auto;
     min-width: 200px;
     @media screen and (min-width:1200px) {
         margin-top: 0;
+        position: absolute;
     }
    }
    .user-mail{
@@ -103,3 +104,9 @@ margin-right: auto;
     }
 }
 
+.form-item{
+    @media screen and (min-width:1200px) {
+        position: relative;
+    }
+    }
+   

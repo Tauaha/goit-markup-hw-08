@@ -573,7 +573,6 @@ a {
 }
 
 .team-list__item {
-  max-width: 354px;
   margin-top: 30px;
   background: #FFFFFF;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -582,6 +581,11 @@ a {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
   font-size: 32px;
+}
+@media screen and (min-width: 768px) {
+  .team-list__item {
+    max-width: 354px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -948,6 +952,12 @@ a {
   background-color: #2F303A;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer .container {
+    padding: 0;
+  }
+}
+
 .footer__trasform {
   max-width: 480px;
   margin-left: auto;
@@ -965,7 +975,13 @@ a {
 }
 @media screen and (min-width: 1200px) {
   .footer__trasform {
-    max-width: 1200px;
+    width: 1200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
 }
 
@@ -994,7 +1010,7 @@ a {
     display: inline-block;
     margin-bottom: 20px;
     margin-right: 156px;
-    margin-left: 15px;
+    margin-left: 0;
     font-size: 26px;
   }
 }
@@ -1046,7 +1062,7 @@ a {
 }
 @media screen and (min-width: 1200px) {
   .footer-list {
-    margin-left: 15px;
+    margin-left: 0;
     text-align: start;
   }
 }
@@ -1112,6 +1128,7 @@ a {
 @media screen and (min-width: 1200px) {
   .mailing .button {
     margin-top: 0;
+    position: absolute;
   }
 }
 
@@ -1187,6 +1204,12 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
 }
+@media screen and (min-width: 1200px) {
+  .form-item {
+    position: relative;
+  }
+}
+
 .modal-backdrop {
   position: fixed;
   top: 0;
@@ -1204,7 +1227,7 @@ a {
   width: 450px;
   height: 609px;
   left: 50%;
-  top: 80%;
+  top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   -webkit-transition: -webkit-transform 500ms;
@@ -1276,6 +1299,7 @@ a {
   fill: #757575;
   -webkit-transform: translateY(-65%);
           transform: translateY(-65%);
+  fill: #212121;
 }
 
 .modal-text {
