@@ -530,17 +530,18 @@ a {
   width: 100%;
 }
 
-.work-team .container {
-  background: #F5F4FA;
-}
 @media screen and (min-width: 1200px) {
   .work-team .container {
     display: grid;
-    width: auto;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
+}
+
+.work-team {
+  background: #F5F4FA;
+  width: 100%;
 }
 
 .team-list {
@@ -548,6 +549,7 @@ a {
 }
 @media screen and (min-width: 768px) {
   .team-list {
+    gap: 30px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -560,6 +562,7 @@ a {
 }
 @media screen and (min-width: 1200px) {
   .team-list {
+    gap: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -570,6 +573,7 @@ a {
 }
 
 .team-list__item {
+  max-width: 354px;
   margin-top: 30px;
   background: #FFFFFF;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1276,13 +1280,14 @@ a {
 
 .modal-text {
   margin: 40px 40px 12px 40px;
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.1;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: #212121;
 }
 
 .modal-input {
@@ -1470,6 +1475,7 @@ a {
 .menu-toggle {
   min-height: 40px;
   min-width: 40px;
+  margin-top: 20px;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -1543,18 +1549,41 @@ a {
   color: #2196F3;
 }
 
-.mobile-menu .nav-list {
-  position: absolute;
+.menu-toggle .contact-menu {
+  display: none;
+}
+
+.menu-container .is-open .contact-nav {
+  display: block;
   padding: 10px;
   color: rgb(2, 1, 1);
   text-decoration: none;
 }
 
-@media (min-width: 768px) {
-  .menu-container {
-    display: none;
-  }
+.contact-menu .nav-list__item {
+  padding-top: 32px;
 }
+
+.contact-menu__link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  color: #2196F3;
+}
+
+.contact-mail__link {
+  padding-top: 32px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+
 .mobile-list {
   display: -webkit-box;
   display: -ms-flexbox;

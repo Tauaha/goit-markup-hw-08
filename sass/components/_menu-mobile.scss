@@ -25,11 +25,10 @@
   .menu-toggle {
     min-height: 40px;
     min-width: 40px;
+    margin-top: 20px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-  
-   //margin-top: 20px;
   
     padding: 0;
     background-color: transparent;
@@ -89,17 +88,47 @@
 .mobile-menu.list-active-link:focus{
     color: #2196F3; 
 }
+.menu-toggle .contact-menu  {
+
+        display: none; }
   
-  .mobile-menu .nav-list {
-    position: absolute;
+  .menu-container .is-open .contact-nav {
+   display: block;
+  
     //display: block;
     padding: 10px;
     color: rgb(2, 1, 1);
     text-decoration: none;
   }
-  @media (min-width: 768px) {
-    .menu-container {
-     display: none;}}
+ // @media (min-width: 768px) {
+    //.menu-container {
+    // display: none;}}
+    .contact-menu .nav-list__item{
+      padding-top: 32px;
+    }
+    .contact-menu__link{
+      font-style: normal;
+font-weight: 500;
+font-size: 34px;
+line-height: 1.1;
+letter-spacing: 0.02em;
+color: #2196F3;
+
+    }
+    .contact-mail__link{
+      padding-top: 32px;
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 1.1;
+      letter-spacing: 0.02em;
+      color: $second-color;
+    }
+    
+
+
+
 
      .mobile-list{
      
